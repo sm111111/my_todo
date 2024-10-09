@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://img.freepik.com/free-vector/stylish-hexagonal-line-pattern-background_1017-19742.jpg?w=900&t=st=1728478642~exp=1728479242~hmac=3caf4d5615ca892fe24e074264fd6215b58a5dd527f8f6eb6299da977ec32ead');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+.input_conatiner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
+    color: #1877F2;
+}
+
+.inputstyle {
+    width: 400px;
+    height: 30px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    border: 3px solid #1877F2;
+    margin-right: 10px;
+    font-size: 0.9rem;
+   
+
+}
+
+.btn {
+    width: 80px;
+    height: 36px;
+    border-radius: 5px;
+    border: none;
+
+    color: white;
+    background-color: #1877F2;
+
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #1877F2;
+    border: 1px solid #1877F2;
+}
+
+
+
+hr {
+    border: 1.5px solid black;
+}
+
+ul {
+    list-style-type: none;
+   
+    padding: 0;
+}
+
+li {
+
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+   
+    align-items: center;
+   
+    border: 2px solid grey;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #AFDBF5;
+
+}
+
+li div {
+    display: flex;
+    gap: 10px;
+  
+
+}
+
+li button {
+    border-radius: 5px;
+    width: 50px;
+  
+    height: 40px;
+    background-color: #1877F2;
+    color: white;
+    border: 1.5px solid black;
+  
+    animation: slideIn 2s forwards;
+
+}
+
+li button:hover {
+    background-color: white;
+    color: #1877F2;
+}
+
+
+
+
+
+
+
+@media (max-width: 300px) {
+    .inputstyle {
+        width: 80%;
+      
+        margin-bottom: 10px;
+       
+    }
+
+    .input_container {
+        flex-direction: column;
+       
+        align-items: center;
+       
+    }
+
+    li {
+        flex-direction: column;
+
+        align-items: flex-start;
+   
+    }
+
+    li div {
+        justify-content: left;
+  
+        width: 100%;
+
+    }
+
+    li button {
+        width: 100%;
+      
+        margin-bottom: 5px;
+       
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
